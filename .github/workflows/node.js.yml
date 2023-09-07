@@ -22,6 +22,6 @@ jobs:
         node-version: 18
     - uses: isbang/compose-action@1.4.1
       with:
-        compose-file:"${{ github.workspace }}/docker-compose.yml"
+        compose-file: "${{ github.workspace }}/docker-compose.yml"
         down-flags: "--volumes"
        
