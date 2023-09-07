@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "cypress run --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12",
     "headTest": "npm run test --headed",
     "chromeTest": "npm run test --browser chrome",
     "recordDashBoardTest": "npm run test --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12 --reporter mochawesome",
