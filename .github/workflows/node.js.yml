@@ -24,4 +24,9 @@ jobs:
       with:
         compose-file: "${{ github.workspace }}/docker-compose.yml"
         down-flags: "--volumes"
+    - name: Cypress run
+      working-directory: ./cypress
+      run: |
+        npm install
+        npm run test
        
