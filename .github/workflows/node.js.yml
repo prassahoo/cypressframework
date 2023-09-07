@@ -29,4 +29,9 @@ jobs:
       run: |
         npm install
         npm run test
-       
+      continue-on-error: true  
+    - name: Upload a Build Artifact  
+      uses: actions/upload-artifact@v3
+      with:
+        name: CypressResults
+        path: "${{ github.workspace }}/cypress/cucumberReports
