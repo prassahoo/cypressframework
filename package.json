@@ -16,7 +16,7 @@
       "output": "cypress/cucumberReports/results.json"
     }
   },
-  "author": "RahulShetty",
+  "author": "PrasantaSahoo",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.0.0",
