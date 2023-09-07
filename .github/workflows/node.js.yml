@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
-    - uses: isbang/compose-action@1.5.1
+    - uses: isbang/compose-action@v1.5.1
       with:
         compose-file: "${{ github.workspace }}/docker-compose.yml"
         down-flags: "--volumes"
