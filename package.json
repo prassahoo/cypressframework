@@ -9,12 +9,16 @@
     "chromeTest": "npm run test --browser chrome",
     "browserTest": "npm run test --browser chrome & npm run test --browser firefox",
     "recordDashBoardTest": "npm run test --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12 --reporter mochawesome",
-    "GreenKartTest": "npm run test --spec \"cypress/integration/GreenKart/*\""
+    "GreenKartTest": "npm run test --spec \"cypress/integration/GreenKart/*\"",
+    "cy:run_spec": "npx cypress run --spec cypress/integration/examples/*.js",
+    "cy:run_browser": "npm run cy:run_spec -- --browser chrome & npm run cy:run_spec -- --browser firefox"
   },
   "cypress-cucumber-preprocessor": {
-    "json": {
-      "enabled": true,
-      "output": "cypress/cucumberReports/results.json"
+    "cucumberJson": {
+      "generate": true,
+      "output": "cypress/cucumberReports/results.json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
     }
   },
   "author": "PrasantaSahoo",
